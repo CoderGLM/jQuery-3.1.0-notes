@@ -1,0 +1,361 @@
+" Press <F1> for help
+
+-[F]jquery-master {
+ |-[F]build {
+ | |-[F]release {
+ | | |-cdn.js
+ | | |-dist.js
+ | | |-ensure-sizzle.js }
+ | |
+ | |-[F]tasks {
+ | | |-[F]lib {
+ | | | |-spawn_test.js }
+ | | |
+ | | |-build.js
+ | | |-dist.js
+ | | |-node_smoke_tests.js
+ | | |-promises_aplus_tests.js
+ | | |-sourcemap.js
+ | | |-testswarm.js }
+ | |
+ | |-release.js }
+ |
+ |-[F]external {
+ | |-[F]npo {
+ | | |-npo.js }
+ | |
+ | |-[F]qunit {
+ | | |-LICENSE.txt
+ | | |-MIT-LICENSE.txt
+ | | |-qunit.css
+ | | |-qunit.js }
+ | |
+ | |-[F]qunit-assert-step {
+ | | |-MIT-LICENSE.txt
+ | | |-qunit-assert-step.js }
+ | |
+ | |-[F]requirejs {
+ | | |-require.js }
+ | |
+ | |-[F]sinon {
+ | | |-LICENSE.txt
+ | | |-sinon.js }
+ | |
+ | |-[F]sizzle {
+ |   |-[F]dist {
+ |   | |-sizzle.js
+ |   | |-sizzle.min.js
+ |   | |-sizzle.min.map }
+ |   |
+ |   |-LICENSE.txt } }
+ |
+ |-[F]src {
+ | |-[F]ajax {
+ | | |-[F]var {
+ | | | |-location.js
+ | | | |-nonce.js
+ | | | |-rquery.js }
+ | | |
+ | | |-jsonp.js
+ | | |-load.js
+ | | |-parseXML.js
+ | | |-script.js
+ | | |-xhr.js }
+ | |
+ | |-[F]attributes {
+ | | |-attr.js
+ | | |-classes.js
+ | | |-prop.js
+ | | |-support.js
+ | | |-val.js }
+ | |
+ | |-[F]core {
+ | | |-[F]var {
+ | | | |-rsingleTag.js }
+ | | |
+ | | |-access.js
+ | | |-DOMEval.js
+ | | |-init.js
+ | | |-parseHTML.js
+ | | |-ready-no-deferred.js
+ | | |-ready.js
+ | | |-readyException.js
+ | | |-support.js }
+ | |
+ | |-[F]css {
+ | | |-[F]var {
+ | | | |-cssExpand.js
+ | | | |-getStyles.js
+ | | | |-isHiddenWithinTree.js
+ | | | |-rmargin.js
+ | | | |-rnumnonpx.js
+ | | | |-swap.js }
+ | | |
+ | | |-addGetHookIf.js
+ | | |-adjustCSS.js
+ | | |-curCSS.js
+ | | |-hiddenVisibleSelectors.js
+ | | |-showHide.js
+ | | |-support.js }
+ | |
+ | |-[F]data {
+ | | |-[F]var {
+ | | | |-acceptData.js
+ | | | |-dataPriv.js
+ | | | |-dataUser.js }
+ | | |
+ | | |-Data.js }
+ | |
+ | |-[F]deferred {
+ | | |-exceptionHook.js }
+ | |
+ | |-[F]effects {
+ | | |-animatedSelector.js
+ | | |-Tween.js }
+ | |
+ | |-[F]event {
+ | | |-ajax.js
+ | | |-alias.js
+ | | |-focusin.js
+ | | |-support.js
+ | | |-trigger.js }
+ | |
+ | |-[F]exports {
+ | | |-amd.js
+ | | |-global.js }
+ | |
+ | |-[F]manipulation {
+ | | |-[F]var {
+ | | | |-rcheckableType.js
+ | | | |-rscriptType.js
+ | | | |-rtagName.js }
+ | | |
+ | | |-_evalUrl.js
+ | | |-buildFragment.js
+ | | |-getAll.js
+ | | |-setGlobalEval.js
+ | | |-support.js
+ | | |-wrapMap.js }
+ | |
+ | |-[F]queue {
+ | | |-delay.js }
+ | |
+ | |-[F]traversing {
+ | | |-[F]var {
+ | | | |-dir.js
+ | | | |-rneedsContext.js
+ | | | |-siblings.js }
+ | | |
+ | | |-findFilter.js }
+ | |
+ | |-[F]var {
+ | | |-arr.js
+ | | |-class2type.js
+ | | |-concat.js
+ | | |-document.js
+ | | |-documentElement.js
+ | | |-fnToString.js
+ | | |-getProto.js
+ | | |-hasOwn.js
+ | | |-indexOf.js
+ | | |-ObjectFunctionString.js
+ | | |-pnum.js
+ | | |-push.js
+ | | |-rcssNum.js
+ | | |-rnotwhite.js
+ | | |-slice.js
+ | | |-support.js
+ | | |-toString.js }
+ | |
+ | |-ajax.js
+ | |-attributes.js
+ | |-callbacks.js
+ | |-core.js
+ | |-css.js
+ | |-data.js
+ | |-deferred.js
+ | |-deprecated.js
+ | |-dimensions.js
+ | |-effects.js
+ | |-event.js
+ | |-jquery.js
+ | |-manipulation.js
+ | |-offset.js
+ | |-queue.js
+ | |-selector-native.js
+ | |-selector-sizzle.js
+ | |-selector.js
+ | |-serialize.js
+ | |-traversing.js
+ | |-wrap.js
+ | |-wrapper.js }
+ |
+ |-[F]test {
+ | |-[F]data {
+ | | |-[F]ajax {
+ | | | |-content-type.php
+ | | | |-evalScript.php
+ | | | |-method.php
+ | | | |-onunload.html
+ | | | |-unreleasedXHR.html }
+ | | |
+ | | |-[F]core {
+ | | | |-aliased.html
+ | | | |-cc_on.html
+ | | | |-dont_return.php
+ | | | |-dynamic_ready.html
+ | | | |-onready.html }
+ | | |
+ | | |-[F]css {
+ | | | |-cssWidthBeforeDocReady.html }
+ | | |
+ | | |-[F]data {
+ | | | |-dataAttrs.html }
+ | | |
+ | | |-[F]dimensions {
+ | | | |-documentLarge.html }
+ | | |
+ | | |-[F]event {
+ | | | |-focusElem.html
+ | | | |-focusinCrossFrame.html
+ | | | |-interactiveReady.html
+ | | | |-onbeforeunload.html
+ | | | |-promiseReady.html
+ | | | |-syncReady.html
+ | | | |-triggerunload.html }
+ | | |
+ | | |-[F]manipulation {
+ | | | |-iframe-denied.html
+ | | | |-scripts-context.html }
+ | | |
+ | | |-[F]offset {
+ | | | |-absolute.html
+ | | | |-body.html
+ | | | |-fixed.html
+ | | | |-relative.html
+ | | | |-scroll.html
+ | | | |-static.html
+ | | | |-table.html }
+ | | |
+ | | |-[F]selector {
+ | | | |-html5_selector.html
+ | | | |-sizzle_cache.html }
+ | | |
+ | | |-[F]support {
+ | | | |-bodyBackground.html
+ | | | |-csp-clean.php
+ | | | |-csp-log.php
+ | | | |-csp.js
+ | | | |-csp.log
+ | | | |-csp.php
+ | | | |-getComputedSupport.js }
+ | | |
+ | | |-1x1.jpg
+ | | |-atom+xml.php
+ | | |-badcall.js
+ | | |-badjson.js
+ | | |-cleanScript.html
+ | | |-dashboard.xml
+ | | |-echoData.php
+ | | |-echoQuery.php
+ | | |-errorWithJSON.php
+ | | |-errorWithText.php
+ | | |-etag.php
+ | | |-headers.php
+ | | |-if_modified_since.php
+ | | |-iframe.html
+ | | |-iframeTest.js
+ | | |-jquery-1.9.1.js
+ | | |-json.php
+ | | |-json_obj.js
+ | | |-jsonp.php
+ | | |-longLoadScript.php
+ | | |-name.html
+ | | |-name.php
+ | | |-nocontent.php
+ | | |-params_html.php
+ | | |-readywaitasset.js
+ | | |-readywaitloader.js
+ | | |-script.php
+ | | |-statusText.php
+ | | |-test.html
+ | | |-test.php
+ | | |-test2.html
+ | | |-test3.html
+ | | |-testbar.php
+ | | |-testinit.js
+ | | |-testrunner.js
+ | | |-testsuite.css
+ | | |-text.php
+ | | |-with_fries.xml
+ | | |-with_fries_over_jsonp.php }
+ | |
+ | |-[F]integration {
+ | | |-[F]data {
+ | | | |-gh-1764-fullscreen-iframe.css
+ | | | |-gh-1764-fullscreen-iframe.html
+ | | | |-gh-1764-fullscreen.js }
+ | | |
+ | | |-gh-1764-fullscreen.html
+ | | |-gh-2343-ie-radio-click.html }
+ | |
+ | |-[F]node_smoke_tests {
+ | | |-[F]lib {
+ | | | |-ensure_global_not_created.js
+ | | | |-ensure_iterability_es6.js
+ | | | |-ensure_jquery.js }
+ | | |
+ | | |-document_missing.js
+ | | |-document_passed.js
+ | | |-document_present_originally.js
+ | | |-iterable_with_native_symbol.js
+ | | |-iterable_with_symbol_polyfill.js }
+ | |
+ | |-[F]promises_aplus_adapters {
+ | | |-deferred.js
+ | | |-when.js }
+ | |
+ | |-[F]unit {
+ | | |-ajax.js
+ | | |-animation.js
+ | | |-attributes.js
+ | | |-basic.js
+ | | |-callbacks.js
+ | | |-core.js
+ | | |-css.js
+ | | |-data.js
+ | | |-deferred.js
+ | | |-deprecated.js
+ | | |-dimensions.js
+ | | |-effects.js
+ | | |-event.js
+ | | |-exports.js
+ | | |-manipulation.js
+ | | |-offset.js
+ | | |-queue.js
+ | | |-ready.js
+ | | |-selector.js
+ | | |-serialize.js
+ | | |-support.js
+ | | |-traversing.js
+ | | |-tween.js
+ | | |-wrap.js }
+ | |
+ | |-delegatetest.html
+ | |-hovertest.html
+ | |-index.html
+ | |-jquery.js
+ | |-localfile.html
+ | |-networkerror.html
+ | |-readywait.html
+ | |-xhtml.php }
+ |
+ |-1.exvim
+ |-AUTHORS.txt
+ |-CONTRIBUTING.md
+ |-Gruntfile.js
+ |-LICENSE.txt
+ |-package.json
+ |-README.md }
+
+

@@ -29,7 +29,11 @@ var rootjQuery,
 		// so migrate can support jQuery.sub (gh-2101)
 		root = root || rootjQuery;
 
+    //
 		// Handle HTML strings
+    //
+    // match = [ 匹配字符串, html, id ];
+    //
 		if ( typeof selector === "string" ) {
 			if ( selector[ 0 ] === "<" &&
 				selector[ selector.length - 1 ] === ">" &&
@@ -42,7 +46,11 @@ var rootjQuery,
 				match = rquickExpr.exec( selector );
 			}
 
+      //
 			// Match html or make sure no context is specified for #id
+      //
+      // 这行其实是这样的：if ( match && ( match[ 1 ] || match[2] && !context)
+      //
 			if ( match && ( match[ 1 ] || !context ) ) {
 
 				// HANDLE: $(html) -> $(array)
